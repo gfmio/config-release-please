@@ -108,7 +108,7 @@ This repository provides production-ready configurations for different project t
 
 - Semantic import versioning (v2, v3, etc.)
 - Tag-based versioning (no version files)
-- Go modules compatible
+- Go modules compatible (requires `go.mod`)
 - Multi-module repository support
 
 **[release-please-config.rust.json](release-please-config.rust.json)** - Rust
@@ -607,6 +607,11 @@ version = "0.1.0"
 - Semantic import versioning (`/v2`, `/v3`)
 - Multi-module repositories
 - `go.mod` updates
+
+**Requirements:**
+
+- A `go.mod` file must exist in the package directory
+- The module path in `go.mod` determines the package name (no `package-name` config needed)
 
 **No version files needed** - Go uses git tags.
 
