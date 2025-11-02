@@ -64,6 +64,7 @@
       "changelog-path": "CHANGELOG.md",
       "draft": false,
       "package-name": "my-package-name",
+      "release-type": "simple", // TODO: Change 'simple' to the appropriate release-type for your project
       "prerelease": false
     }
   }
